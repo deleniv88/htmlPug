@@ -1,0 +1,164 @@
+.footer{
+    width: 1440px;
+    height: 224px;
+    border-top: 2px solid #FF4E50;
+    margin: 0 auto;
+}
+
+.footer-text{
+    width: 940px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.footer-info{
+    width: 541px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.footer-logo{
+    @include font ('Montserrat', normal, 300, 16px, #FF4E50);
+    line-height: 23px;
+}
+
+.company{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.company-head{
+    @include font-header ('Montserrat Bold', normal, 300, 14px, #444444);
+    line-height: 17px;
+}
+
+
+.company-info{
+    height: 150px;
+    font-family: 'Montserrat';
+    @extend .company-head;
+    line-height: 23px;
+    color: #999999;
+    letter-spacing: -1px;
+    margin-top: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.design{
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+}
+
+.footer-design{
+    @include font ('Montserrat', normal, 300, 10px, #CCCCCC);
+    line-height: 12px;
+    letter-spacing: 0.7px;
+    margin-bottom: 6px;
+    text-align: right;
+}
+
+@media screen and (max-width: 1474px) and (min-width: 1240px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1240px) and (min-width: 768px) {
+    .footer{
+        width: 768px;
+    }
+        
+    .footer-text{
+        width: 689px;
+    }
+        
+    .footer-info{
+        width: 460px;
+        margin-top: 35px;
+    }
+
+    .company{
+        width: 233px;
+    }
+        
+    .design{
+        margin-top: 39px;
+    }
+        
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .footer{
+        width: 320px;
+    }
+    
+    .footer-text{
+        width: 280px;
+        height: 206px;
+        position: relative;
+        margin-top: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-info{
+        width: 280px;
+        margin-top: 0px;
+        position: absolute;
+        top: 30px;
+       flex-wrap: wrap;
+       flex-direction: column;
+       text-align: center;
+    }
+    
+    .footer-logo{
+        line-height: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .company{
+        width: 280px;
+        height: 102px;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    
+    .company-head{
+        line-height: 26px;
+        margin-bottom: 1px;
+        margin-right: 5px;
+    }
+    
+    
+    .company-info{
+        width: 209px;
+        height: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+    
+    .design{
+        margin-top: 0px;
+        position: absolute;
+        bottom: 6px;
+    }
+
+    .footer-design{
+        text-align: center;
+    }
+   
+}

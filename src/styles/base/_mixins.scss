@@ -1,0 +1,23 @@
+@mixin font-header ($ff, $ft, $fw, $fs, $cl) {
+    font-family: $ff;
+    font-style: $ft;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $cl;
+}
+
+@mixin font-text ($ff, $ft, $fw, $fs, $cl) {
+    font-family: $ff;
+    font-style: $ft;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $cl;
+}
+
+@mixin font ($ff, $ft, $fw, $fs, $cl) {
+    font-family: $ff;
+    font-style: $ft;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $cl;
+}
